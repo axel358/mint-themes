@@ -757,6 +757,7 @@ StScrollBar {
   min-width: 350px;
   border: 1px solid $borders_color;
   background-color: $base_color;
+  border-radius: $widget_border_radius;
 }
 
 .calendar-events-no-events-box {
@@ -765,6 +766,7 @@ StScrollBar {
 .calendar-events-no-events-button {
   margin: 6px 0 6px 0;
   padding: 6px;
+  border-radius: $widget_border_radius;
 
   &:hover {
     background-color: $selected_bg_color;
@@ -994,6 +996,7 @@ StScrollBar {
 .calendar-day {
   border-width: 0;
   color: transparentize($fg_color, 0.1);
+  border-radius: $widget_border_radius;
 }
 
 .calendar-day-top {

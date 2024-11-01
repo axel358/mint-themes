@@ -1491,7 +1491,7 @@ StScrollBar {
   &-favorites-box {
     padding: 10px;
     transition-duration: 300;
-    background-color: darken($base_color, 5%);
+    background-color: $base_color;
     border: 1px solid $borders_color;
     border-radius: $widget_border_radius;
   }

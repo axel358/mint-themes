@@ -1,5 +1,8 @@
 
 $asset_path: if($variant == 'dark', dark-assets, light-assets);
+$widget_border_radius: 5px;
+$entry_border_radius: 5px;
+$popup_border_radius: 5px;
 
 stage {
   color: $fg_color;
@@ -18,7 +21,7 @@ stage {
   transition-duration: 0;
 
   &, &:focus, &:hover, &:hover:focus, &:active, &:active:focus, &:insensitive {
-    border-radius: 2px;
+    border-radius: $widget_border_radius;
   }
 
   @include button(normal);
@@ -34,7 +37,7 @@ stage {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
-  border-radius: 2px;
+  border-radius: $widget_border_radius;
 
   @include button(osd);
 
@@ -53,7 +56,7 @@ stage {
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 3px;
+  border-radius: $entry_border_radius;
 
   @include entry(normal);
 
@@ -74,7 +77,7 @@ stage {
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 3px;
+  border-radius: $entry_border_radius;
 
   @include entry(osd);
 
@@ -256,7 +259,7 @@ StScrollBar {
 #LookingGlassDialog {
     color: $fg_color;
     border: 1px solid $borders_color;
-    border-radius: 3px;
+    border-radius: $popup_border_radius;
     background-color: $bg_color;
     spacing: 4px;
     padding: 8px;
@@ -268,8 +271,9 @@ StScrollBar {
 .menu {
   color: $fg_color;
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: $popup_border_radius;
 	background-color: transparentize($bg_color, 0.01);
+  margin: 3px;
 
   &.top {
     border-radius: 0 0 3px 3px;
@@ -308,6 +312,9 @@ StScrollBar {
   // border: 1px solid transparent;
   border-left-width: 0;
   border-right-width: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: $widget_border_radius;
 
   &:active {
     color: $noaccent_selected_fg_color;
@@ -1118,7 +1125,7 @@ StScrollBar {
   color: $fg_color;
   border: 1px solid $borders_color;
   background-color: $bg_color;
-  border-radius: 3px;
+  border-radius: $popup_border_radius;
   padding: 20px;
 
   > StBoxLayout {
@@ -1129,7 +1136,7 @@ StScrollBar {
 
   .item-box {
     padding: 8px;
-    border-radius: 2px;
+    border-radius: $widget_border_radius;
 
     &:outlined {
       padding: 8px;
@@ -1204,7 +1211,7 @@ StScrollBar {
 .modal-dialog {
   background-color: $bg_color;
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: $popup_border_radius;
   padding: 5px 10px;
 
   > StBoxLayout:first-child {
@@ -1241,7 +1248,7 @@ StScrollBar {
 .run-dialog {
   padding: 10px 15px 10px 15px;
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: $popup_border_radius;
   background-color: $bg_color;
 
   > * { padding: 0; }
@@ -1277,7 +1284,7 @@ StScrollBar {
     width: 21em;
     height: 1.2em;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: $entry_border_radius;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
     selection-background-color: $selected_bg_color;
@@ -1332,7 +1339,7 @@ StScrollBar {
     width: 21em;
     height: 1.2em;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: $entry_border_radius;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
     selection-background-color: $selected_bg_color;
@@ -1447,7 +1454,7 @@ StScrollBar {
   min-width: 2em;
   font-size: 1.4em;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: $widget_border_radius;
   box-shadow: none;
 
   @include button(osd);
@@ -1483,12 +1490,13 @@ StScrollBar {
     transition-duration: 300;
     background-color: darken($base_color, 5%);
     border: 1px solid $borders_color;
+    border-radius: $widget_border_radius;
   }
 
   &-favorites-button {
     padding: .9em 1em;
     border: 1px solid rgba(0,0,0,0);
-    border-radius: 2px;
+    border-radius: $widget_border_radius;
 
     &:hover {
       background-color: $noaccent_selected_bg_color;
@@ -1513,6 +1521,7 @@ StScrollBar {
   &-application-button {
     padding: 7px;
     border: 1px solid rgba(0,0,0,0);
+    border-radius: $widget_border_radius;
 
     // This style is used in menu application buttons for applications which were newly installed
     &:highlighted { font-weight: bold; }
@@ -1522,6 +1531,7 @@ StScrollBar {
       color: $noaccent_selected_fg_color;
       background-color: $noaccent_selected_bg_color;
       border: 1px solid $borders_color;
+      border-radius: $widget_border_radius;
 
       &:highlighted { font-weight: bold; }
     }
@@ -1533,12 +1543,14 @@ StScrollBar {
   &-category-button {
     padding: 7px;
     border: 1px solid rgba(0,0,0,0);
+    border-radius: $widget_border_radius;
 
     &-selected {
       padding: 7px;
       color: $noaccent_selected_fg_color;
       background-color: $noaccent_selected_bg_color;
       border: 1px solid $borders_color;
+      border-radius: $widget_border_radius;
     }
     &:hover {
       background-color: mix($noaccent_selected_bg_color, $bg_color, 40%);
@@ -1735,7 +1747,7 @@ StScrollBar {
     color: $fg_color;
     border: 1px solid $borders_color;
     background-color: $bg_color;
-    border-radius: 3px;
+    border-radius: $popup_border_radius;
     padding: 6px 12px 12px 12px;
     font-size: 1em;
   }
@@ -1837,7 +1849,7 @@ StScrollBar {
     color: $fg_color;
     border: 1px solid $borders_color;
     background-color: $bg_color;
-    border-radius: 3px;
+    border-radius: $widget_border_radius;
     padding: 0px;
 
     > StBoxLayout {
@@ -1846,7 +1858,7 @@ StScrollBar {
 
     .item-box {
       padding: 10px;
-      border-radius: 2px;
+      border-radius: $widget_border_radius;
       spacing: 4px;
 
       &:outlined {
@@ -1966,7 +1978,7 @@ StScrollBar {
       height: 13px;
       padding: 5px;
       color: $fg_color;
-      border-radius: 2px;
+      border-radius: $widget_border_radius;
       border: 1px solid transparent;
 
       StIcon { icon-size: 16px; }
@@ -2147,6 +2159,7 @@ StScrollBar {
     text-shadow: none;
     transition-duration: 100;
     text-align: center;
+    border-radius: 3px;
 
     &.vertical {
       padding-left: 0px;

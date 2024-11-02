@@ -129,13 +129,13 @@ entry {
   border: 1px solid;
   padding: 5px 8px;
   caret-color: currentColor;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #303030;
   border-color: #BABABA;
   background-color: #ffffff; }
   entry.search {
-    border-radius: 4px; }
+    border-radius: 5px; }
   entry image {
     color: rgba(63, 63, 63, 0.896); }
     entry image.left {
@@ -246,7 +246,7 @@ button {
   min-width: 20px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 5px 8px;
   color: rgba(0, 0, 0, 0.87);
   outline-color: rgba(0, 0, 0, 0.17);
@@ -542,8 +542,8 @@ popover.combo scrollbar.vertical:dir(rtl), .linked:not(.vertical) > combobox:fir
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat, .inline-toolbar toolbutton:first-child > button.flat {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -554,8 +554,8 @@ popover.combo scrollbar.vertical:dir(ltr), .linked:not(.vertical) > combobox:las
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat, .inline-toolbar toolbutton:last-child > button.flat {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-right-style: solid; }
@@ -567,7 +567,7 @@ headerbar .linked:not(.vertical).path-bar > button:last-child, spinbutton:not(.v
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar toolbutton:only-child > button.flat {
-  border-radius: 3px;
+  border-radius: 5px;
   border-style: solid; }
 
 .linked.vertical > combobox > box > button.combo, spinbutton.vertical button, spinbutton.vertical entry, .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked {
@@ -575,16 +575,16 @@ headerbar .linked:not(.vertical).path-bar > button:only-child, spinbutton:not(.v
   border-bottom-style: none; }
 
 list.content > row:first-child, list.content > row.expander:first-child row.header, list.content > row.expander:checked, list.content > row.expander:checked row.header, list.content > row.expander:checked + row, list.content > row.expander:checked + row.expander row.header, popover.combo overshoot.top, popover.combo list > row:first-child, .linked.vertical > combobox:first-child > box > button.combo, spinbutton.vertical button:first-child, spinbutton.vertical entry:first-child, .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
 
 list.content > row:last-child, list.content > row.checked-expander-row-previous-sibling, list.content > row.expander:checked, list.content > row.expander:not(:checked):last-child row.header, list.content > row.expander.checked-expander-row-previous-sibling:not(:checked) row.header, list.content > row.expander.empty:checked row.header, list.content > row.expander list.nested > row:last-child, popover.combo overshoot.bottom, popover.combo list > row:last-child, .linked.vertical > combobox:last-child > box > button.combo, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child, .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   border-bottom-style: solid; }
 
 .linked.vertical > combobox:only-child > box > button.combo, spinbutton.vertical button:only-child, spinbutton.vertical entry:only-child, .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
-  border-radius: 3px;
+  border-radius: 5px;
   border-style: solid; }
 
 TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .prelight-page .button:active, TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .prelight-page .button:hover, TerminalWindow .notebook .active-page .button, TerminalWindow .notebook .prelight-page .button, .app-notification button.flat:disabled, .app-notification button.flat, notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.flat:active:hover, notebook > header > tabs > tab button.flat:hover, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, button:link, button:visited, menuitem.button.flat,
@@ -1477,7 +1477,8 @@ menubar,
   .menubar > menuitem {
     padding: 6px 8px;
     border: solid transparent;
-    border-width: 0; }
+    border-width: 0;
+    border-radius: 5px; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
       background-color: rgba(0, 0, 0, 0.1);
@@ -1577,7 +1578,7 @@ menu,
       border-color: transparent; }
 
 .csd .popup {
-  border-radius: 2px; }
+  border-radius: 5px; }
 
 popover,
 popover.background {

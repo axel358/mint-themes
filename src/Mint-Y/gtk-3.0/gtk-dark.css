@@ -1657,7 +1657,7 @@ notebook {
         outline-offset: -4px;
         border: 1px solid transparent;
         border-bottom: none;
-        border-radius: 1px 1px 0 0; }
+        border-radius: 5px 5px 0 0; }
         notebook > header.top > tabs > tab + tab {
           margin-left: -1px; }
     notebook > header.bottom {
@@ -1669,7 +1669,7 @@ notebook {
         outline-offset: -4px;
         border: 1px solid transparent;
         border-top: none;
-        border-radius: 0 0 1px 1px; }
+        border-radius: 0 0 5px 5px; }
         notebook > header.bottom > tabs > tab + tab {
           margin-left: -1px; }
     notebook > header.right {
@@ -1681,7 +1681,7 @@ notebook {
         outline-offset: -4px;
         border: 1px solid transparent;
         border-left: none;
-        border-radius: 0 1px 1px 0; }
+        border-radius: 0 5px 5px 0; }
         notebook > header.right > tabs > tab + tab {
           margin-top: -1px; }
     notebook > header.left {
@@ -1693,7 +1693,7 @@ notebook {
         outline-offset: -4px;
         border: 1px solid transparent;
         border-right: none;
-        border-radius: 1px 0 0 1px; }
+        border-radius: 5px 0 0 5px; }
         notebook > header.left > tabs > tab + tab {
           margin-top: -1px; }
     notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
@@ -2282,7 +2282,7 @@ frame > border,
 .frame {
   margin: 0;
   padding: 0;
-  border-radius: 0;
+  border-radius: 5px;
   border: 1px solid #191919; }
 
 frame.flat > border,

@@ -30,7 +30,7 @@ $tooltip_fg_color: $selected_fg_color;
 $tooltip_border_color: #d0d0d0;
 
 $osd_fg_color: #c3c3c3;
-$osd_bg_color: #353535;
+$osd_bg_color: $bg_color;
 
 $osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_button_border: transparentize(darken($osd_bg_color, 20%), 0.6);

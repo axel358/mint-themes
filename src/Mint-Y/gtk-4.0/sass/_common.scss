@@ -4,6 +4,8 @@
 
 $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $asset_suffix: if($variant=='dark', '-dark', ''); // use dark assets in dark variant
+$widget_border_radius: 5px;
+$entry_border_radius: 5px;
 
 //
 // Base States
@@ -260,10 +262,10 @@ entry {
     padding: 5px 8px;
 
     caret-color: currentColor;
-    border-radius: 3px;
+    border-radius: $entry_border_radius;
     transition: all 200ms $ease-out-quad;
 
-    &.search { border-radius: 4px; }
+    &.search { border-radius: $entry_border_radius; }
 
     @include entry(normal);
 
@@ -419,7 +421,7 @@ button {
     min-width: 20px;
     transition: $button_transition;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: $widget_border_radius;
     padding: 5px 8px;
 
     @include button(normal);
@@ -704,22 +706,22 @@ button {
 }
 
 %linked_left {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: $widget_border_radius;
+  border-bottom-left-radius: $widget_border_radius;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 %linked_right {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: $widget_border_radius;
+  border-bottom-right-radius: $widget_border_radius;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-right-style: solid;
 }
 
 %linked_only_child {
-  border-radius: 3px;
+  border-radius: $widget_border_radius;
   border-style: solid;
 }
 
@@ -737,18 +739,18 @@ button {
 }
 
 %linked_vertical_top {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: $widget_border_radius;
+  border-top-right-radius: $widget_border_radius;
 }
 
 %linked_vertical_bottom {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: $widget_border_radius;
+  border-bottom-right-radius: $widget_border_radius;
   border-bottom-style: solid;
 }
 
 %linked_vertical_only_child {
-  border-radius: 3px;
+  border-radius: $widget_border_radius;
   border-style: solid;
 }
 
@@ -1869,6 +1871,7 @@ menubar {
     padding: 6px 8px;
     border: solid transparent;
     border-width: 0;
+    border-radius: $widget_border_radius;
 
     &:selected { //Seems like it :hover even with keyboard focus
       background-color: $menu_selected_bg_color;

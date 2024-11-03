@@ -1955,10 +1955,10 @@ notebook {
           }
 
           // tab border radius
-          @if $_pos==top { border-radius: 1px 1px 0 0; }
-          @else if $_pos==bottom { border-radius: 0 0 1px 1px; }
-          @else if $_pos==left { border-radius: 1px 0 0 1px; }
-          @else if $_pos==right { border-radius: 0 1px 1px 0; }
+          @if $_pos==top { border-radius: $widget_border_radius $widget_border_radius 0 0; }
+          @else if $_pos==bottom { border-radius: 0 0 $widget_border_radius $widget_border_radius; }
+          @else if $_pos==left { border-radius: $widget_border_radius 0 0 $widget_border_radius; }
+          @else if $_pos==right { border-radius: 0 $widget_border_radius $widget_border_radius 0; }
         }
       }
     }

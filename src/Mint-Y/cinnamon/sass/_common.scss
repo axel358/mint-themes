@@ -272,7 +272,7 @@ StScrollBar {
   color: $fg_color;
   border: 1px solid $borders_color;
   border-radius: $popup_border_radius;
-	background-color: transparentize($bg_color, 0.01);
+  background-color: transparentize($bg_color, 0.01);
   margin: 3px;
 
   &.top {
@@ -1852,7 +1852,8 @@ StScrollBar {
     color: $fg_color;
     border: 1px solid $borders_color;
     background-color: $bg_color;
-    border-radius: $widget_border_radius;
+    border-radius: $popup_border_radius;
+    margin: 3px;
     padding: 0px;
 
     > StBoxLayout {
@@ -1861,7 +1862,7 @@ StScrollBar {
 
     .item-box {
       padding: 10px;
-      border-radius: $widget_border_radius;
+      border-radius: $popup_border_radius;
       spacing: 4px;
 
       &:outlined {

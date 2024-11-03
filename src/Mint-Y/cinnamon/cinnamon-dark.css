@@ -75,8 +75,8 @@ stage {
   transition-duration: 300ms;
   border-radius: 5px;
   color: #c3c3c3;
-  background-color: rgba(109, 109, 109, 0.4);
-  border: 1px solid rgba(22, 22, 22, 0.4);
+  background-color: rgba(98, 98, 98, 0.4);
+  border: 1px solid rgba(11, 11, 11, 0.4);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .notification StEntry:focus {
     color: #ffffff;
@@ -85,8 +85,8 @@ stage {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .notification StEntry:insensitive {
     color: rgba(195, 195, 195, 0.55);
-    background-color: rgba(109, 109, 109, 0.25);
-    border: 1px solid rgba(22, 22, 22, 0.4);
+    background-color: rgba(98, 98, 98, 0.25);
+    border: 1px solid rgba(11, 11, 11, 0.4);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
 
 StScrollView.vfade {
@@ -504,8 +504,8 @@ StScrollBar {
   spacing: 12px; }
 
 .window-caption {
-  background-color: #353535;
-  border: 1px solid #353535;
+  background-color: #2a2a2a;
+  border: 1px solid #2a2a2a;
   color: #c3c3c3;
   spacing: 8px;
   border-radius: 2px;
@@ -536,8 +536,8 @@ StScrollBar {
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   color: #c3c3c3;
-  background-color: rgba(109, 109, 109, 0.4);
-  border: 1px solid rgba(22, 22, 22, 0.4);
+  background-color: rgba(98, 98, 98, 0.4);
+  border: 1px solid rgba(11, 11, 11, 0.4);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .expo-workspaces-name-entry:focus,
   .expo-workspaces-name-entry#selected:focus {
@@ -559,7 +559,7 @@ StScrollBar {
     border-radius: 5px; }
 
 .expo-background {
-  background-color: #353535; }
+  background-color: #2a2a2a; }
 
 .workspace-thumbnails {
   spacing: 26px; }
@@ -1002,8 +1002,8 @@ StScrollBar {
     selected-color: #ffffff;
     selection-background-color: #35a854;
     color: #c3c3c3;
-    background-color: rgba(109, 109, 109, 0.4);
-    border: 1px solid rgba(22, 22, 22, 0.4);
+    background-color: rgba(98, 98, 98, 0.4);
+    border: 1px solid rgba(11, 11, 11, 0.4);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
     .run-dialog-entry:focus {
       color: rgba(255, 255, 255, 0.87);
@@ -1048,8 +1048,8 @@ StScrollBar {
     selected-color: #ffffff;
     selection-background-color: #35a854;
     color: #c3c3c3;
-    background-color: rgba(109, 109, 109, 0.4);
-    border: 1px solid rgba(22, 22, 22, 0.4);
+    background-color: rgba(98, 98, 98, 0.4);
+    border: 1px solid rgba(11, 11, 11, 0.4);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
     .polkit-dialog-password-entry:focus {
       color: rgba(255, 255, 255, 0.87);
@@ -1123,7 +1123,7 @@ StScrollBar {
     border-width: 0px; }
 
 #keyboard {
-  background-color: #353535;
+  background-color: #2a2a2a;
   border-width: 0;
   border-top-width: 1px;
   border-color: rgba(0, 0, 0, 0.4); }
@@ -1144,25 +1144,25 @@ StScrollBar {
   box-shadow: none;
   color: #c3c3c3;
   border: 1px solid #1b1b1b;
-  background-color: rgba(109, 109, 109, 0.4); }
+  background-color: rgba(98, 98, 98, 0.4); }
   .keyboard-key:hover {
     color: #c3c3c3;
-    border: 1px solid rgba(2, 2, 2, 0.4);
-    background-color: rgba(127, 127, 127, 0.5); }
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(116, 116, 116, 0.5); }
   .keyboard-key:active, .keyboard-key:checked {
     color: #ffffff;
     border: 1px solid #35a854;
     background-color: #35a854; }
   .keyboard-key:grayed {
-    color: #606060;
-    border: 1px solid rgba(2, 2, 2, 0.4);
-    background-color: rgba(109, 109, 109, 0.25); }
+    color: #585858;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(98, 98, 98, 0.25); }
 
 .keyboard-subkeys {
   color: #c3c3c3;
   padding: 5px;
   -arrow-border-radius: 2px;
-  -arrow-background-color: #353535;
+  -arrow-background-color: #2a2a2a;
   -arrow-border-width: 1px;
   -arrow-border-color: rgba(0, 0, 0, 0.4);
   -arrow-base: 20px;
@@ -1439,13 +1439,14 @@ StScrollBar {
   color: rgba(255, 255, 255, 0.87);
   border: 1px solid #1b1b1b;
   background-color: #2a2a2a;
-  border-radius: 5px;
+  border-radius: 8px;
+  margin: 3px;
   padding: 0px; }
   .grouped-window-list-thumbnail-menu > StBoxLayout {
     padding: 4px; }
   .grouped-window-list-thumbnail-menu .item-box {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     spacing: 4px; }
     .grouped-window-list-thumbnail-menu .item-box:outlined {
       padding: 8px;

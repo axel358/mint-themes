@@ -2525,7 +2525,7 @@ filechooserbutton:drop(active) {
 
 .sidebar {
   border-style: none;
-  background-color: #fafafa; }
+  background-color: #f3f2f2; }
   stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left {
     border-right: 1px solid #c7c7c7;
     border-left-style: none; }
@@ -2533,7 +2533,7 @@ filechooserbutton:drop(active) {
     border-left: 1px solid #c7c7c7;
     border-right-style: none; }
   .sidebar list {
-    background-color: #ffffff; }
+    background-color: transparent; }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
     border-style: none; }
 

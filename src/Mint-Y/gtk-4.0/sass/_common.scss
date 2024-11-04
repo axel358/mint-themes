@@ -2978,7 +2978,7 @@ filechooserbutton:drop(active) {
 //
 .sidebar {
   border-style: none;
-  background-color: lighten($bg_color, 2%);
+  background-color: $dark_sidebar_bg;
 
   &:not(separator) {
     @at-root %sidebar_left,
@@ -2998,7 +2998,7 @@ filechooserbutton:drop(active) {
   }
 
   listview.view,
-  list { background-color: $base_color; }
+  list { background-color: transparent; }
 
   paned & { &.left, &.right, &.left:dir(rtl), &:dir(rtl), &:dir(ltr), & { border-style: none; }}
 }

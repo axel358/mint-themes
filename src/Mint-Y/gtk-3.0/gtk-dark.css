@@ -2520,7 +2520,7 @@ filechooserbutton:drop(active) {
 
 .sidebar {
   border-style: none;
-  background-color: #2d2d2d; }
+  background-color: #202020; }
   stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left {
     border-right: 1px solid #191919;
     border-left-style: none; }
@@ -2528,7 +2528,7 @@ filechooserbutton:drop(active) {
     border-left: 1px solid #191919;
     border-right-style: none; }
   .sidebar list {
-    background-color: #303030; }
+    background-color: transparent; }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
     border-style: none; }
 
@@ -3112,7 +3112,7 @@ filechooser placessidebar list {
 
 .nautilus-window placessidebar.sidebar list,
 filechooser placessidebar.sidebar list {
-  background-color: #1b1b1b; }
+  background-color: #202020; }
   .nautilus-window placessidebar.sidebar list row.sidebar-row,
   filechooser placessidebar.sidebar list row.sidebar-row {
     border: none;
@@ -3175,7 +3175,7 @@ filechooser placessidebar.sidebar list {
 
 .nautilus-window.maximized placessidebar.sidebar,
 filechooser.maximized placessidebar.sidebar {
-  background-color: #1b1b1b; }
+  background-color: #202020; }
 
 filechooser placessidebar > viewport.frame {
   border: 1px solid #191919;
@@ -3230,17 +3230,17 @@ NautilusListView .view, NautilusListView iconview {
     border-width: 0; }
   .nemo-window .sidebar {
     color: rgba(255, 255, 255, 0.87);
-    background-color: #1b1b1b; }
+    background-color: #202020; }
     .nemo-window .sidebar .frame {
       border: none; }
     .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-      background-color: #1b1b1b;
+      background-color: #202020;
       color: rgba(255, 255, 255, 0.87); }
       .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
         background-color: #35a854;
         color: #ffffff; }
       .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-        color: rgba(126, 126, 126, 0.935); }
+        color: rgba(129, 129, 129, 0.935); }
         .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
           color: rgba(255, 255, 255, 0.87); }
   .nemo-window grid > paned > separator {
@@ -3262,7 +3262,7 @@ NautilusListView .view, NautilusListView iconview {
   .caja-navigation-window .caja-side-pane .view, .caja-navigation-window .caja-side-pane iconview,
   .caja-navigation-window .caja-side-pane textview text,
   .caja-navigation-window .caja-side-pane notebook {
-    background-color: #1b1b1b;
+    background-color: #202020;
     color: rgba(255, 255, 255, 0.87); }
   .caja-navigation-window .caja-side-pane .frame {
     border-width: 1px 0 0 0; }
@@ -3303,7 +3303,7 @@ NautilusListView .view, NautilusListView iconview {
     color: rgba(255, 255, 255, 0.9); }
 
 .gedit-document-panel {
-  background-color: #1b1b1b; }
+  background-color: #202020; }
   .gedit-document-panel row {
     color: rgba(255, 255, 255, 0.87);
     background-color: rgba(255, 255, 255, 0); }
@@ -3788,7 +3788,7 @@ EvWindow .content-view .view:focus:selected {
   color: #ffffff; }
 
 .thunar .sidebar .view, .thunar .sidebar iconview {
-  background-color: #1b1b1b;
+  background-color: #202020;
   color: rgba(255, 255, 255, 0.87); }
   .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:active, .thunar .sidebar iconview:active {
     background: #35a854;

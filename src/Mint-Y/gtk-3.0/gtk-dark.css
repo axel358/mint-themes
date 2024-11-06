@@ -3594,11 +3594,11 @@ SynapseGuiViewVirgilio *:selected {
 .gnome-panel-menu-bar,
 .mate-panel-menu-bar {
   color: #DADADA;
-  background-color: red; }
+  background-color: #2f2f2f; }
   .gnome-panel-menu-bar, .gnome-panel-menu-bar menubar,
   .mate-panel-menu-bar,
   .mate-panel-menu-bar menubar {
-    background-color: red; }
+    background-color: #2f2f2f; }
   .gnome-panel-menu-bar menubar,
   .gnome-panel-menu-bar #PanelApplet label,
   .gnome-panel-menu-bar #PanelApplet image,
@@ -3651,7 +3651,7 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
   background-position: left; }
 
 .mintmenu:hover {
-  background-color: #ff1a1a; }
+  background-color: #3c3c3c; }
 
 .mintmenu:selected {
   color: #ffffff;
@@ -3677,11 +3677,11 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
   color: #DADADA;
   border-radius: 0;
   border: none;
-  background-color: rgba(255, 0, 0, 0); }
+  background-color: rgba(47, 47, 47, 0); }
   .gnome-panel-menu-bar button:hover:not(#tasklist-button),
   .mate-panel-menu-bar button:hover:not(#tasklist-button), .xfce4-panel.panel button:hover {
     border: none;
-    background-color: #ff3333; }
+    background-color: #494949; }
   .gnome-panel-menu-bar button:active:not(#tasklist-button),
   .mate-panel-menu-bar button:active:not(#tasklist-button), .xfce4-panel.panel button:active, .gnome-panel-menu-bar button:checked:not(#tasklist-button),
   .mate-panel-menu-bar button:checked:not(#tasklist-button), .xfce4-panel.panel button:checked {
@@ -3798,10 +3798,10 @@ EvWindow .content-view .view:focus:selected {
   -gtk-icon-transform: scale(0.9); }
 
 #panel_window {
-  background-color: red;
+  background-color: #2f2f2f;
   color: #DADADA;
   font-weight: bold;
-  box-shadow: inset 0 -1px #db0000; }
+  box-shadow: inset 0 -1px #1d1d1d; }
   #panel_window menubar,
   #panel_window menubar > menuitem {
     background-color: transparent;
